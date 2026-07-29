@@ -17,8 +17,9 @@ capacity; flat dots are stations whose TSO publishes no per-unit figures.
 
 ```bash
 npm install
-npm run geo     # precompute country polygons + border anchors (~90s, already committed)
-npm run plants  # precompute power station locations (already committed)
+npm run geo       # precompute country polygons + border anchors (~90s, already committed)
+npm run plants    # precompute power station locations (already committed)
+npm run snapshot  # fetch grid data into public/data/snapshot.json
 npm run dev
 ```
 
@@ -35,7 +36,26 @@ registered address with subject "Restful API access". Approval is manual.
 cp .env.example .env.local   # then paste your token into ENTSOE_TOKEN
 ```
 
-The app switches to live data automatically when `ENTSOE_TOKEN` is set.
+The app switches to live data automatically when `ENTSOE_TOKEN` is set. Rerun
+`npm run snapshot` to pull fresh figures.
+
+## Deployment
+
+The site is a static export hosted on GitHub Pages. There is no server: the grid
+data is fetched at build time into `public/data/snapshot.json` and shipped as a
+plain file, so `.github/workflows/deploy.yml` rebuilds and redeploys hourly on a
+cron to keep it current.
+
+To host your own copy:
+
+1. Settings → Pages → Source: **GitHub Actions**.
+2. Settings → Secrets and variables → Actions: add `ENTSOE_TOKEN`. Without it the
+   deployed site serves simulated data.
+3. Push to `main`, or run the workflow manually from the Actions tab.
+
+GitHub's cron is best-effort and often runs late, so the data can be an hour or
+so stale; the UI always shows the snapshot's own timestamp. Scheduled workflows
+are also disabled automatically after 60 days without repository activity.
 
 ## How it works
 

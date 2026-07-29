@@ -6,6 +6,7 @@ import type { FeatureCollection, Point } from "geojson";
 import type { GridSnapshot } from "@/lib/domain/types";
 import { formatMw } from "@/lib/theme";
 import type { PlantProps, PlantsMetadata } from "@/lib/plants";
+import { asset } from "@/lib/basePath";
 import type { BorderAnchorProps } from "./FlowMap";
 import CountryPanel from "./CountryPanel";
 import Legend from "./Legend";
@@ -31,8 +32,8 @@ export default function MapView() {
 
 	useEffect(() => {
 		Promise.all([
-			fetch("/geo/countries.json").then((r) => r.json()),
-			fetch("/geo/borders.json").then((r) => r.json()),
+			fetch(asset("/geo/countries.json")).then((r) => r.json()),
+			fetch(asset("/geo/borders.json")).then((r) => r.json()),
 		])
 			.then(([c, b]) => {
 				setCountries(c);
@@ -41,7 +42,7 @@ export default function MapView() {
 			.catch(() => setError("Failed to load map geometry"));
 
 		// Plants are an optional layer: a failure here must not break the map.
-		fetch("/geo/plants.json")
+		fetch(asset("/geo/plants.json"))
 			.then((r) => (r.ok ? r.json() : null))
 			.then(setPlants)
 			.catch(() => setPlants(null));
@@ -52,7 +53,11 @@ export default function MapView() {
 
 		const load = async () => {
 			try {
-				const res = await fetch("/api/snapshot");
+				// Regenerated hourly by the deploy workflow; cache-busted so a
+				// long-lived tab still picks up new builds.
+				const res = await fetch(
+					`${asset("/data/snapshot.json")}?t=${Date.now()}`,
+				);
 				if (!res.ok) throw new Error(`snapshot ${res.status}`);
 				const data: GridSnapshot = await res.json();
 				if (!cancelled) {
