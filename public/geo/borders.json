@@ -1,0 +1,1525 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "10YAL-KESH-----5|10YGR-HTSO-----Y",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.514,
+          40.252
+        ]
+      },
+      "properties": {
+        "a": "10YAL-KESH-----5",
+        "b": "10YGR-HTSO-----Y",
+        "isoA": "AL",
+        "isoB": "GR",
+        "bearing": 128.732,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YAL-KESH-----5|10YCS-CG-TSO---S",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.268,
+          42.232
+        ]
+      },
+      "properties": {
+        "a": "10YAL-KESH-----5",
+        "b": "10YCS-CG-TSO---S",
+        "isoA": "AL",
+        "isoB": "ME",
+        "bearing": -19.4,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YAL-KESH-----5|10YMK-MEPSO----8",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.717,
+          41.279
+        ]
+      },
+      "properties": {
+        "a": "10YAL-KESH-----5",
+        "b": "10YMK-MEPSO----8",
+        "isoA": "AL",
+        "isoB": "MK",
+        "bearing": 69.736,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YAL-KESH-----5|10Y1001C--00100H",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.247,
+          41.978
+        ]
+      },
+      "properties": {
+        "a": "10YAL-KESH-----5",
+        "b": "10Y1001C--00100H",
+        "isoA": "AL",
+        "isoB": "XK",
+        "bearing": 22.834,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YAT-APG------L|10YCH-SWISSGRIDZ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.01,
+          47.063
+        ]
+      },
+      "properties": {
+        "a": "10YAT-APG------L",
+        "b": "10YCH-SWISSGRIDZ",
+        "isoA": "AT",
+        "isoB": "CH",
+        "bearing": -101.39,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YAT-APG------L|10YCZ-CEPS-----N",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.36,
+          48.788
+        ]
+      },
+      "properties": {
+        "a": "10YAT-APG------L",
+        "b": "10YCZ-CEPS-----N",
+        "isoA": "AT",
+        "isoB": "CZ",
+        "bearing": 25.542,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YAT-APG------L|10Y1001A1001A83F",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.719,
+          48.012
+        ]
+      },
+      "properties": {
+        "a": "10YAT-APG------L",
+        "b": "10Y1001A1001A83F",
+        "isoA": "AT",
+        "isoB": "DE",
+        "bearing": -30.335,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YAT-APG------L|10YHU-MAVIR----U",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.613,
+          47.466
+        ]
+      },
+      "properties": {
+        "a": "10YAT-APG------L",
+        "b": "10YHU-MAVIR----U",
+        "isoA": "AT",
+        "isoB": "HU",
+        "bearing": 93.97,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YAT-APG------L|10YIT-GRTN-----B",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.104,
+          46.8
+        ]
+      },
+      "properties": {
+        "a": "10YAT-APG------L",
+        "b": "10YIT-GRTN-----B",
+        "isoA": "AT",
+        "isoB": "IT",
+        "bearing": -168.486,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YAT-APG------L|10YSI-ELES-----O",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.912,
+          46.704
+        ]
+      },
+      "properties": {
+        "a": "10YAT-APG------L",
+        "b": "10YSI-ELES-----O",
+        "isoA": "AT",
+        "isoB": "SI",
+        "bearing": 153.581,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YBA-JPCC-----D|10YHR-HEP------M",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.381,
+          43.918
+        ]
+      },
+      "properties": {
+        "a": "10YBA-JPCC-----D",
+        "b": "10YHR-HEP------M",
+        "isoA": "BA",
+        "isoB": "HR",
+        "bearing": -52.389,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YBA-JPCC-----D|10YCS-CG-TSO---S",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.728,
+          43.031
+        ]
+      },
+      "properties": {
+        "a": "10YBA-JPCC-----D",
+        "b": "10YCS-CG-TSO---S",
+        "isoA": "BA",
+        "isoB": "ME",
+        "bearing": 142.583,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YBA-JPCC-----D|10YCS-SERBIATSOV",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.303,
+          44.218
+        ]
+      },
+      "properties": {
+        "a": "10YBA-JPCC-----D",
+        "b": "10YCS-SERBIATSOV",
+        "isoA": "BA",
+        "isoB": "RS",
+        "bearing": 88.258,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YBE----------2|10Y1001A1001A83F",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.081,
+          50.621
+        ]
+      },
+      "properties": {
+        "a": "10YBE----------2",
+        "b": "10Y1001A1001A83F",
+        "isoA": "BE",
+        "isoB": "DE",
+        "bearing": 79.442,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YBE----------2|10YFR-RTE------C",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.186,
+          50.284
+        ]
+      },
+      "properties": {
+        "a": "10YBE----------2",
+        "b": "10YFR-RTE------C",
+        "isoA": "BE",
+        "isoB": "FR",
+        "bearing": -164.963,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YBE----------2|10YGB----------A",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.501,
+          50.907
+        ]
+      },
+      "properties": {
+        "a": "10YBE----------2",
+        "b": "10YGB----------A",
+        "isoA": "BE",
+        "isoB": "GB",
+        "bearing": -79.816,
+        "kind": "sea"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YBE----------2|10YLU-CEGEDEL-NQ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.506,
+          49.848
+        ]
+      },
+      "properties": {
+        "a": "10YBE----------2",
+        "b": "10YLU-CEGEDEL-NQ",
+        "isoA": "BE",
+        "isoB": "LU",
+        "bearing": 132.151,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YBE----------2|10YNL----------L",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.117,
+          51.095
+        ]
+      },
+      "properties": {
+        "a": "10YBE----------2",
+        "b": "10YNL----------L",
+        "isoA": "BE",
+        "isoB": "NL",
+        "bearing": 18.208,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YCA-BULGARIA-R|10YGR-HTSO-----Y",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.634,
+          41.5
+        ]
+      },
+      "properties": {
+        "a": "10YCA-BULGARIA-R",
+        "b": "10YGR-HTSO-----Y",
+        "isoA": "BG",
+        "isoB": "GR",
+        "bearing": -170.165,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YCA-BULGARIA-R|10YMK-MEPSO----8",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.746,
+          41.791
+        ]
+      },
+      "properties": {
+        "a": "10YCA-BULGARIA-R",
+        "b": "10YMK-MEPSO----8",
+        "isoA": "BG",
+        "isoB": "MK",
+        "bearing": -114.034,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YCA-BULGARIA-R|10YRO-TEL------P",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.645,
+          43.954
+        ]
+      },
+      "properties": {
+        "a": "10YCA-BULGARIA-R",
+        "b": "10YRO-TEL------P",
+        "isoA": "BG",
+        "isoB": "RO",
+        "bearing": -1.937,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YCA-BULGARIA-R|10YCS-SERBIATSOV",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.666,
+          43.256
+        ]
+      },
+      "properties": {
+        "a": "10YCA-BULGARIA-R",
+        "b": "10YCS-SERBIATSOV",
+        "isoA": "BG",
+        "isoB": "RS",
+        "bearing": -65.424,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YCA-BULGARIA-R|10YTR-TEIAS----W",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.166,
+          41.915
+        ]
+      },
+      "properties": {
+        "a": "10YCA-BULGARIA-R",
+        "b": "10YTR-TEIAS----W",
+        "isoA": "BG",
+        "isoB": "TR",
+        "bearing": 113.283,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YCH-SWISSGRIDZ|10Y1001A1001A83F",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.575,
+          47.649
+        ]
+      },
+      "properties": {
+        "a": "10YCH-SWISSGRIDZ",
+        "b": "10Y1001A1001A83F",
+        "isoA": "CH",
+        "isoB": "DE",
+        "bearing": 17.15,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YCH-SWISSGRIDZ|10YFR-RTE------C",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.801,
+          46.766
+        ]
+      },
+      "properties": {
+        "a": "10YCH-SWISSGRIDZ",
+        "b": "10YFR-RTE------C",
+        "isoA": "CH",
+        "isoB": "FR",
+        "bearing": -96.319,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YCH-SWISSGRIDZ|10YIT-GRTN-----B",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.733,
+          46.357
+        ]
+      },
+      "properties": {
+        "a": "10YCH-SWISSGRIDZ",
+        "b": "10YIT-GRTN-----B",
+        "isoA": "CH",
+        "isoB": "IT",
+        "bearing": 148.582,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YCZ-CEPS-----N|10Y1001A1001A83F",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.547,
+          49.896
+        ]
+      },
+      "properties": {
+        "a": "10YCZ-CEPS-----N",
+        "b": "10Y1001A1001A83F",
+        "isoA": "CZ",
+        "isoB": "DE",
+        "bearing": -63.67,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YCZ-CEPS-----N|10YPL-AREA-----S",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.824,
+          50.253
+        ]
+      },
+      "properties": {
+        "a": "10YCZ-CEPS-----N",
+        "b": "10YPL-AREA-----S",
+        "isoA": "CZ",
+        "isoB": "PL",
+        "bearing": 45.939,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YCZ-CEPS-----N|10YSK-SEPS-----K",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.895,
+          49.058
+        ]
+      },
+      "properties": {
+        "a": "10YCZ-CEPS-----N",
+        "b": "10YSK-SEPS-----K",
+        "isoA": "CZ",
+        "isoB": "SK",
+        "bearing": 109.012,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10Y1001A1001A83F|10Y1001A1001A65H",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.172,
+          54.854
+        ]
+      },
+      "properties": {
+        "a": "10Y1001A1001A83F",
+        "b": "10Y1001A1001A65H",
+        "isoA": "DE",
+        "isoB": "DK",
+        "bearing": 3.538,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10Y1001A1001A83F|10YFR-RTE------C",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.241,
+          48.539
+        ]
+      },
+      "properties": {
+        "a": "10Y1001A1001A83F",
+        "b": "10YFR-RTE------C",
+        "isoA": "DE",
+        "isoB": "FR",
+        "bearing": -132.103,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10Y1001A1001A83F|10YLU-CEGEDEL-NQ",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.719,
+          49.835
+        ]
+      },
+      "properties": {
+        "a": "10Y1001A1001A83F",
+        "b": "10YLU-CEGEDEL-NQ",
+        "isoA": "DE",
+        "isoB": "LU",
+        "bearing": -114.767,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10Y1001A1001A83F|10YNL----------L",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.535,
+          52.039
+        ]
+      },
+      "properties": {
+        "a": "10Y1001A1001A83F",
+        "b": "10YNL----------L",
+        "isoA": "DE",
+        "isoB": "NL",
+        "bearing": -69.818,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10Y1001A1001A83F|10YNO-0--------C",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.944,
+          56.529
+        ]
+      },
+      "properties": {
+        "a": "10Y1001A1001A83F",
+        "b": "10YNO-0--------C",
+        "isoA": "DE",
+        "isoB": "NO",
+        "bearing": -9.286,
+        "kind": "sea"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10Y1001A1001A83F|10YPL-AREA-----S",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.576,
+          52.278
+        ]
+      },
+      "properties": {
+        "a": "10Y1001A1001A83F",
+        "b": "10YPL-AREA-----S",
+        "isoA": "DE",
+        "isoB": "PL",
+        "bearing": 77.144,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10Y1001A1001A83F|10YSE-1--------K",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.311,
+          55.008
+        ]
+      },
+      "properties": {
+        "a": "10Y1001A1001A83F",
+        "b": "10YSE-1--------K",
+        "isoA": "DE",
+        "isoB": "SE",
+        "bearing": -7.224,
+        "kind": "sea"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10Y1001A1001A65H|10YGB----------A",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.068,
+          53.907
+        ]
+      },
+      "properties": {
+        "a": "10Y1001A1001A65H",
+        "b": "10YGB----------A",
+        "isoA": "DK",
+        "isoB": "GB",
+        "bearing": -115.208,
+        "kind": "sea"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10Y1001A1001A65H|10YNL----------L",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.718,
+          54.295
+        ]
+      },
+      "properties": {
+        "a": "10Y1001A1001A65H",
+        "b": "10YNL----------L",
+        "isoA": "DK",
+        "isoB": "NL",
+        "bearing": -140.041,
+        "kind": "sea"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10Y1001A1001A65H|10YNO-0--------C",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.295,
+          57.596
+        ]
+      },
+      "properties": {
+        "a": "10Y1001A1001A65H",
+        "b": "10YNO-0--------C",
+        "isoA": "DK",
+        "isoB": "NO",
+        "bearing": -24.269,
+        "kind": "sea"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10Y1001A1001A65H|10YSE-1--------K",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.557,
+          56.104
+        ]
+      },
+      "properties": {
+        "a": "10Y1001A1001A65H",
+        "b": "10YSE-1--------K",
+        "isoA": "DK",
+        "isoB": "SE",
+        "bearing": 61.623,
+        "kind": "sea"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10Y1001A1001A39I|10YFI-1--------U",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.435,
+          59.745
+        ]
+      },
+      "properties": {
+        "a": "10Y1001A1001A39I",
+        "b": "10YFI-1--------U",
+        "isoA": "EE",
+        "isoB": "FI",
+        "bearing": 1.176,
+        "kind": "sea"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10Y1001A1001A39I|10YLV-1001A00074",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.847,
+          57.792
+        ]
+      },
+      "properties": {
+        "a": "10Y1001A1001A39I",
+        "b": "10YLV-1001A00074",
+        "isoA": "EE",
+        "isoB": "LV",
+        "bearing": -170.483,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YES-REE------0|10YFR-RTE------C",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.71,
+          42.876
+        ]
+      },
+      "properties": {
+        "a": "10YES-REE------0",
+        "b": "10YFR-RTE------C",
+        "isoA": "ES",
+        "isoB": "FR",
+        "bearing": 34.486,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YES-REE------0|10YPT-REN------W",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.498,
+          39.678
+        ]
+      },
+      "properties": {
+        "a": "10YES-REE------0",
+        "b": "10YPT-REN------W",
+        "isoA": "ES",
+        "isoB": "PT",
+        "bearing": -95.987,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YFI-1--------U|10YNO-0--------C",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.015,
+          69.334
+        ]
+      },
+      "properties": {
+        "a": "10YFI-1--------U",
+        "b": "10YNO-0--------C",
+        "isoA": "FI",
+        "isoB": "NO",
+        "bearing": -70.181,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YFI-1--------U|10YSE-1--------K",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.428,
+          67.438
+        ]
+      },
+      "properties": {
+        "a": "10YFI-1--------U",
+        "b": "10YSE-1--------K",
+        "isoA": "FI",
+        "isoB": "SE",
+        "bearing": -120.496,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YFR-RTE------C|10YGB----------A",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.182,
+          50.991
+        ]
+      },
+      "properties": {
+        "a": "10YFR-RTE------C",
+        "b": "10YGB----------A",
+        "isoA": "FR",
+        "isoB": "GB",
+        "bearing": -51.702,
+        "kind": "sea"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YFR-RTE------C|10YIT-GRTN-----B",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.162,
+          44.848
+        ]
+      },
+      "properties": {
+        "a": "10YFR-RTE------C",
+        "b": "10YIT-GRTN-----B",
+        "isoA": "FR",
+        "isoB": "IT",
+        "bearing": 119.85,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YGB----------A|10Y1001A1001A59C",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.169,
+          54.565
+        ]
+      },
+      "properties": {
+        "a": "10YGB----------A",
+        "b": "10Y1001A1001A59C",
+        "isoA": "GB",
+        "isoB": "IE",
+        "bearing": -115.959,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YGB----------A|10YNL----------L",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.191,
+          51.664
+        ]
+      },
+      "properties": {
+        "a": "10YGB----------A",
+        "b": "10YNL----------L",
+        "isoA": "GB",
+        "isoB": "NL",
+        "bearing": 89.104,
+        "kind": "sea"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YGB----------A|10YNO-0--------C",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.001,
+          60.976
+        ]
+      },
+      "properties": {
+        "a": "10YGB----------A",
+        "b": "10YNO-0--------C",
+        "isoA": "GB",
+        "isoB": "NO",
+        "bearing": 81.892,
+        "kind": "sea"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YGR-HTSO-----Y|10YIT-GRTN-----B",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.09,
+          39.949
+        ]
+      },
+      "properties": {
+        "a": "10YGR-HTSO-----Y",
+        "b": "10YIT-GRTN-----B",
+        "isoA": "GR",
+        "isoB": "IT",
+        "bearing": -70.959,
+        "kind": "sea"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YGR-HTSO-----Y|10YMK-MEPSO----8",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.928,
+          41.091
+        ]
+      },
+      "properties": {
+        "a": "10YGR-HTSO-----Y",
+        "b": "10YMK-MEPSO----8",
+        "isoA": "GR",
+        "isoB": "MK",
+        "bearing": -31.062,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YGR-HTSO-----Y|10YTR-TEIAS----W",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.357,
+          41.231
+        ]
+      },
+      "properties": {
+        "a": "10YGR-HTSO-----Y",
+        "b": "10YTR-TEIAS----W",
+        "isoA": "GR",
+        "isoB": "TR",
+        "bearing": 82.073,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YHR-HEP------M|10YHU-MAVIR----U",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.646,
+          46.146
+        ]
+      },
+      "properties": {
+        "a": "10YHR-HEP------M",
+        "b": "10YHU-MAVIR----U",
+        "isoA": "HR",
+        "isoB": "HU",
+        "bearing": 34.294,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YHR-HEP------M|10YCS-SERBIATSOV",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.122,
+          45.366
+        ]
+      },
+      "properties": {
+        "a": "10YHR-HEP------M",
+        "b": "10YCS-SERBIATSOV",
+        "isoA": "HR",
+        "isoB": "RS",
+        "bearing": 98.874,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YHR-HEP------M|10YSI-ELES-----O",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.069,
+          45.929
+        ]
+      },
+      "properties": {
+        "a": "10YHR-HEP------M",
+        "b": "10YSI-ELES-----O",
+        "isoA": "HR",
+        "isoB": "SI",
+        "bearing": -43.243,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YHU-MAVIR----U|10YRO-TEL------P",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.513,
+          47.051
+        ]
+      },
+      "properties": {
+        "a": "10YHU-MAVIR----U",
+        "b": "10YRO-TEL------P",
+        "isoA": "HU",
+        "isoB": "RO",
+        "bearing": 107.374,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YHU-MAVIR----U|10YCS-SERBIATSOV",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.631,
+          46.063
+        ]
+      },
+      "properties": {
+        "a": "10YHU-MAVIR----U",
+        "b": "10YCS-SERBIATSOV",
+        "isoA": "HU",
+        "isoB": "RS",
+        "bearing": 160.667,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YHU-MAVIR----U|10YSK-SEPS-----K",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.662,
+          48.157
+        ]
+      },
+      "properties": {
+        "a": "10YHU-MAVIR----U",
+        "b": "10YSK-SEPS-----K",
+        "isoA": "HU",
+        "isoB": "SK",
+        "bearing": 4.809,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YHU-MAVIR----U|10Y1001C--00003F",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.525,
+          48.077
+        ]
+      },
+      "properties": {
+        "a": "10YHU-MAVIR----U",
+        "b": "10Y1001C--00003F",
+        "isoA": "HU",
+        "isoB": "UA",
+        "bearing": 73.343,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YIT-GRTN-----B|10YCS-CG-TSO---S",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.668,
+          41.223
+        ]
+      },
+      "properties": {
+        "a": "10YIT-GRTN-----B",
+        "b": "10YCS-CG-TSO---S",
+        "isoA": "IT",
+        "isoB": "ME",
+        "bearing": 33.937,
+        "kind": "sea"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YIT-GRTN-----B|10YSI-ELES-----O",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.616,
+          46.048
+        ]
+      },
+      "properties": {
+        "a": "10YIT-GRTN-----B",
+        "b": "10YSI-ELES-----O",
+        "isoA": "IT",
+        "isoB": "SI",
+        "bearing": 22.979,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YLT-1001A0008Q|10YLV-1001A00074",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.812,
+          56.041
+        ]
+      },
+      "properties": {
+        "a": "10YLT-1001A0008Q",
+        "b": "10YLV-1001A00074",
+        "isoA": "LT",
+        "isoB": "LV",
+        "bearing": 16.385,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YLT-1001A0008Q|10YPL-AREA-----S",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.143,
+          54.158
+        ]
+      },
+      "properties": {
+        "a": "10YLT-1001A0008Q",
+        "b": "10YPL-AREA-----S",
+        "isoA": "LT",
+        "isoB": "PL",
+        "bearing": -138.697,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YLT-1001A0008Q|10YSE-1--------K",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.924,
+          56.676
+        ]
+      },
+      "properties": {
+        "a": "10YLT-1001A0008Q",
+        "b": "10YSE-1--------K",
+        "isoA": "LT",
+        "isoB": "SE",
+        "bearing": -48.173,
+        "kind": "sea"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10Y1001A1001A990|10YRO-TEL------P",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.337,
+          46.845
+        ]
+      },
+      "properties": {
+        "a": "10Y1001A1001A990",
+        "b": "10YRO-TEL------P",
+        "isoA": "MD",
+        "isoB": "RO",
+        "bearing": -117.54,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10Y1001A1001A990|10Y1001C--00003F",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.468,
+          46.968
+        ]
+      },
+      "properties": {
+        "a": "10Y1001A1001A990",
+        "b": "10Y1001C--00003F",
+        "isoA": "MD",
+        "isoB": "UA",
+        "bearing": 42.149,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YCS-CG-TSO---S|10YCS-SERBIATSOV",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.648,
+          43.426
+        ]
+      },
+      "properties": {
+        "a": "10YCS-CG-TSO---S",
+        "b": "10YCS-SERBIATSOV",
+        "isoA": "ME",
+        "isoB": "RS",
+        "bearing": 38.298,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YCS-CG-TSO---S|10Y1001C--00100H",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.151,
+          42.74
+        ]
+      },
+      "properties": {
+        "a": "10YCS-CG-TSO---S",
+        "b": "10Y1001C--00100H",
+        "isoA": "ME",
+        "isoB": "XK",
+        "bearing": 99.053,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YMK-MEPSO----8|10YCS-SERBIATSOV",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.154,
+          42.424
+        ]
+      },
+      "properties": {
+        "a": "10YMK-MEPSO----8",
+        "b": "10YCS-SERBIATSOV",
+        "isoA": "MK",
+        "isoB": "RS",
+        "bearing": -12.911,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YMK-MEPSO----8|10Y1001C--00100H",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.302,
+          41.99
+        ]
+      },
+      "properties": {
+        "a": "10YMK-MEPSO----8",
+        "b": "10Y1001C--00100H",
+        "isoA": "MK",
+        "isoB": "XK",
+        "bearing": -32.399,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YNO-0--------C|10YSE-1--------K",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.919,
+          63.965
+        ]
+      },
+      "properties": {
+        "a": "10YNO-0--------C",
+        "b": "10YSE-1--------K",
+        "isoA": "NO",
+        "isoB": "SE",
+        "bearing": 140.395,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YPL-AREA-----S|10YSE-1--------K",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.549,
+          54.686
+        ]
+      },
+      "properties": {
+        "a": "10YPL-AREA-----S",
+        "b": "10YSE-1--------K",
+        "isoA": "PL",
+        "isoB": "SE",
+        "bearing": -12.882,
+        "kind": "sea"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YPL-AREA-----S|10YSK-SEPS-----K",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.659,
+          49.331
+        ]
+      },
+      "properties": {
+        "a": "10YPL-AREA-----S",
+        "b": "10YSK-SEPS-----K",
+        "isoA": "PL",
+        "isoB": "SK",
+        "bearing": 178.156,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YPL-AREA-----S|10Y1001C--00003F",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.298,
+          50.269
+        ]
+      },
+      "properties": {
+        "a": "10YPL-AREA-----S",
+        "b": "10Y1001C--00003F",
+        "isoA": "PL",
+        "isoB": "UA",
+        "bearing": 108.66,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YRO-TEL------P|10YCS-SERBIATSOV",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.502,
+          45.17
+        ]
+      },
+      "properties": {
+        "a": "10YRO-TEL------P",
+        "b": "10YCS-SERBIATSOV",
+        "isoA": "RO",
+        "isoB": "RS",
+        "bearing": -117.536,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YRO-TEL------P|10Y1001C--00003F",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.728,
+          47.987
+        ]
+      },
+      "properties": {
+        "a": "10YRO-TEL------P",
+        "b": "10Y1001C--00003F",
+        "isoA": "RO",
+        "isoB": "UA",
+        "bearing": 50.021,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YCS-SERBIATSOV|10Y1001C--00100H",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.216,
+          42.773
+        ]
+      },
+      "properties": {
+        "a": "10YCS-SERBIATSOV",
+        "b": "10Y1001C--00100H",
+        "isoA": "RS",
+        "isoB": "XK",
+        "bearing": -179.826,
+        "kind": "land"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10YSK-SEPS-----K|10Y1001C--00003F",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.293,
+          48.844
+        ]
+      },
+      "properties": {
+        "a": "10YSK-SEPS-----K",
+        "b": "10Y1001C--00003F",
+        "isoA": "SK",
+        "isoB": "UA",
+        "bearing": 84.023,
+        "kind": "land"
+      }
+    }
+  ]
+}
