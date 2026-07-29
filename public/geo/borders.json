@@ -7,8 +7,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          20.514,
-          40.252
+          20.636,
+          40.111
         ]
       },
       "properties": {
@@ -16,7 +16,7 @@
         "b": "10YGR-HTSO-----Y",
         "isoA": "AL",
         "isoB": "GR",
-        "bearing": 128.732,
+        "bearing": -225.986,
         "kind": "land"
       }
     },
@@ -26,8 +26,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          19.268,
-          42.232
+          19.37,
+          42.302
         ]
       },
       "properties": {
@@ -35,7 +35,7 @@
         "b": "10YCS-CG-TSO---S",
         "isoA": "AL",
         "isoB": "ME",
-        "bearing": -19.4,
+        "bearing": -69.641,
         "kind": "land"
       }
     },
@@ -45,8 +45,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          20.717,
-          41.279
+          20.53,
+          41.2
         ]
       },
       "properties": {
@@ -54,7 +54,7 @@
         "b": "10YMK-MEPSO----8",
         "isoA": "AL",
         "isoB": "MK",
-        "bearing": 69.736,
+        "bearing": 70.41,
         "kind": "land"
       }
     },
@@ -64,8 +64,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          20.247,
-          41.978
+          20.575,
+          41.956
         ]
       },
       "properties": {
@@ -73,7 +73,7 @@
         "b": "10Y1001C--00100H",
         "isoA": "AL",
         "isoB": "XK",
-        "bearing": 22.834,
+        "bearing": 81.362,
         "kind": "land"
       }
     },
@@ -83,8 +83,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          10.01,
-          47.063
+          9.928,
+          46.918
         ]
       },
       "properties": {
@@ -92,7 +92,7 @@
         "b": "10YCH-SWISSGRIDZ",
         "isoA": "AT",
         "isoB": "CH",
-        "bearing": -101.39,
+        "bearing": -157.543,
         "kind": "land"
       }
     },
@@ -102,8 +102,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          15.36,
-          48.788
+          15.2,
+          48.949
         ]
       },
       "properties": {
@@ -111,7 +111,7 @@
         "b": "10YCZ-CEPS-----N",
         "isoA": "AT",
         "isoB": "CZ",
-        "bearing": 25.542,
+        "bearing": -1.516,
         "kind": "land"
       }
     },
@@ -121,8 +121,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.719,
-          48.012
+          12.287,
+          47.7
         ]
       },
       "properties": {
@@ -130,7 +130,7 @@
         "b": "10Y1001A1001A83F",
         "isoA": "AT",
         "isoB": "DE",
-        "bearing": -30.335,
+        "bearing": -6.668,
         "kind": "land"
       }
     },
@@ -140,8 +140,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          16.613,
-          47.466
+          16.609,
+          47.598
         ]
       },
       "properties": {
@@ -149,7 +149,7 @@
         "b": "10YHU-MAVIR----U",
         "isoA": "AT",
         "isoB": "HU",
-        "bearing": 93.97,
+        "bearing": 87.901,
         "kind": "land"
       }
     },
@@ -159,8 +159,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          12.104,
-          46.8
+          12.176,
+          46.932
         ]
       },
       "properties": {
@@ -168,7 +168,7 @@
         "b": "10YIT-GRTN-----B",
         "isoA": "AT",
         "isoB": "IT",
-        "bearing": -168.486,
+        "bearing": -121.271,
         "kind": "land"
       }
     },
@@ -178,8 +178,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          14.912,
-          46.704
+          14.959,
+          46.615
         ]
       },
       "properties": {
@@ -187,7 +187,7 @@
         "b": "10YSI-ELES-----O",
         "isoA": "AT",
         "isoB": "SI",
-        "bearing": 153.581,
+        "bearing": -201.949,
         "kind": "land"
       }
     },
@@ -197,8 +197,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          17.381,
-          43.918
+          15.782,
+          44.752
         ]
       },
       "properties": {
@@ -206,7 +206,7 @@
         "b": "10YHR-HEP------M",
         "isoA": "BA",
         "isoB": "HR",
-        "bearing": -52.389,
+        "bearing": -113.677,
         "kind": "land"
       }
     },
@@ -216,8 +216,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          18.728,
-          43.031
+          18.484,
+          42.984
         ]
       },
       "properties": {
@@ -225,7 +225,7 @@
         "b": "10YCS-CG-TSO---S",
         "isoA": "BA",
         "isoB": "ME",
-        "bearing": 142.583,
+        "bearing": -254.37,
         "kind": "land"
       }
     },
@@ -235,8 +235,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          19.303,
-          44.218
+          19.415,
+          44.167
         ]
       },
       "properties": {
@@ -244,7 +244,7 @@
         "b": "10YCS-SERBIATSOV",
         "isoA": "BA",
         "isoB": "RS",
-        "bearing": 88.258,
+        "bearing": 47.691,
         "kind": "land"
       }
     },
@@ -254,8 +254,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.081,
-          50.621
+          6.207,
+          50.598
         ]
       },
       "properties": {
@@ -263,7 +263,7 @@
         "b": "10Y1001A1001A83F",
         "isoA": "BE",
         "isoB": "DE",
-        "bearing": 79.442,
+        "bearing": 56.191,
         "kind": "land"
       }
     },
@@ -273,8 +273,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          4.186,
-          50.284
+          4.187,
+          50.089
         ]
       },
       "properties": {
@@ -282,7 +282,7 @@
         "b": "10YFR-RTE------C",
         "isoA": "BE",
         "isoB": "FR",
-        "bearing": -164.963,
+        "bearing": -112.999,
         "kind": "land"
       }
     },
@@ -311,8 +311,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          5.506,
-          49.848
+          5.739,
+          49.864
         ]
       },
       "properties": {
@@ -320,7 +320,7 @@
         "b": "10YLU-CEGEDEL-NQ",
         "isoA": "BE",
         "isoB": "LU",
-        "bearing": 132.151,
+        "bearing": -268.709,
         "kind": "land"
       }
     },
@@ -330,8 +330,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          5.117,
-          51.095
+          5.359,
+          51.268
         ]
       },
       "properties": {
@@ -339,7 +339,7 @@
         "b": "10YNL----------L",
         "isoA": "BE",
         "isoB": "NL",
-        "bearing": 18.208,
+        "bearing": 28.055,
         "kind": "land"
       }
     },
@@ -349,8 +349,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          24.634,
-          41.5
+          24.834,
+          41.388
         ]
       },
       "properties": {
@@ -358,7 +358,7 @@
         "b": "10YGR-HTSO-----Y",
         "isoA": "BG",
         "isoB": "GR",
-        "bearing": -170.165,
+        "bearing": -159.414,
         "kind": "land"
       }
     },
@@ -368,8 +368,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          22.746,
-          41.791
+          22.99,
+          41.694
         ]
       },
       "properties": {
@@ -377,7 +377,7 @@
         "b": "10YMK-MEPSO----8",
         "isoA": "BG",
         "isoB": "MK",
-        "bearing": -114.034,
+        "bearing": -95.81,
         "kind": "land"
       }
     },
@@ -387,8 +387,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          25.645,
-          43.954
+          25.54,
+          43.684
         ]
       },
       "properties": {
@@ -396,7 +396,7 @@
         "b": "10YRO-TEL------P",
         "isoA": "BG",
         "isoB": "RO",
-        "bearing": -1.937,
+        "bearing": -12.937,
         "kind": "land"
       }
     },
@@ -406,8 +406,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          22.666,
-          43.256
+          22.885,
+          43.246
         ]
       },
       "properties": {
@@ -415,7 +415,7 @@
         "b": "10YCS-SERBIATSOV",
         "isoA": "BG",
         "isoB": "RS",
-        "bearing": -65.424,
+        "bearing": -114.859,
         "kind": "land"
       }
     },
@@ -425,8 +425,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          27.166,
-          41.915
+          27.123,
+          42.071
         ]
       },
       "properties": {
@@ -434,7 +434,7 @@
         "b": "10YTR-TEIAS----W",
         "isoA": "BG",
         "isoB": "TR",
-        "bearing": 113.283,
+        "bearing": -183.421,
         "kind": "land"
       }
     },
@@ -444,8 +444,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          8.575,
-          47.649
+          8.46,
+          47.736
         ]
       },
       "properties": {
@@ -453,7 +453,7 @@
         "b": "10Y1001A1001A83F",
         "isoA": "CH",
         "isoB": "DE",
-        "bearing": 17.15,
+        "bearing": -28.427,
         "kind": "land"
       }
     },
@@ -463,8 +463,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.801,
-          46.766
+          6.14,
+          46.574
         ]
       },
       "properties": {
@@ -472,7 +472,7 @@
         "b": "10YFR-RTE------C",
         "isoA": "CH",
         "isoB": "FR",
-        "bearing": -96.319,
+        "bearing": -63.634,
         "kind": "land"
       }
     },
@@ -482,8 +482,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          8.733,
-          46.357
+          9.009,
+          45.987
         ]
       },
       "properties": {
@@ -491,7 +491,7 @@
         "b": "10YIT-GRTN-----B",
         "isoA": "CH",
         "isoB": "IT",
-        "bearing": 148.582,
+        "bearing": -241.291,
         "kind": "land"
       }
     },
@@ -501,8 +501,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          13.547,
-          49.896
+          12.344,
+          50.25
         ]
       },
       "properties": {
@@ -510,7 +510,7 @@
         "b": "10Y1001A1001A83F",
         "isoA": "CZ",
         "isoB": "DE",
-        "bearing": -63.67,
+        "bearing": -24.803,
         "kind": "land"
       }
     },
@@ -520,8 +520,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          16.824,
-          50.253
+          16.92,
+          50.212
         ]
       },
       "properties": {
@@ -529,7 +529,7 @@
         "b": "10YPL-AREA-----S",
         "isoA": "CZ",
         "isoB": "PL",
-        "bearing": 45.939,
+        "bearing": 118.467,
         "kind": "land"
       }
     },
@@ -539,8 +539,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          17.895,
-          49.058
+          17.922,
+          49.003
         ]
       },
       "properties": {
@@ -548,7 +548,7 @@
         "b": "10YSK-SEPS-----K",
         "isoA": "CZ",
         "isoB": "SK",
-        "bearing": 109.012,
+        "bearing": -226.042,
         "kind": "land"
       }
     },
@@ -559,7 +559,7 @@
         "type": "Point",
         "coordinates": [
           9.172,
-          54.854
+          54.846
         ]
       },
       "properties": {
@@ -567,7 +567,7 @@
         "b": "10Y1001A1001A65H",
         "isoA": "DE",
         "isoB": "DK",
-        "bearing": 3.538,
+        "bearing": 7.942,
         "kind": "land"
       }
     },
@@ -577,8 +577,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.241,
-          48.539
+          8.127,
+          48.926
         ]
       },
       "properties": {
@@ -586,7 +586,7 @@
         "b": "10YFR-RTE------C",
         "isoA": "DE",
         "isoB": "FR",
-        "bearing": -132.103,
+        "bearing": -101.12,
         "kind": "land"
       }
     },
@@ -596,8 +596,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.719,
-          49.835
+          6.49,
+          49.784
         ]
       },
       "properties": {
@@ -605,7 +605,7 @@
         "b": "10YLU-CEGEDEL-NQ",
         "isoA": "DE",
         "isoB": "LU",
-        "bearing": -114.767,
+        "bearing": -106.958,
         "kind": "land"
       }
     },
@@ -615,8 +615,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.535,
-          52.039
+          6.764,
+          51.947
         ]
       },
       "properties": {
@@ -624,7 +624,7 @@
         "b": "10YNL----------L",
         "isoA": "DE",
         "isoB": "NL",
-        "bearing": -69.818,
+        "bearing": -50.74,
         "kind": "land"
       }
     },
@@ -653,8 +653,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          14.576,
-          52.278
+          14.614,
+          52.297
         ]
       },
       "properties": {
@@ -662,7 +662,7 @@
         "b": "10YPL-AREA-----S",
         "isoA": "DE",
         "isoB": "PL",
-        "bearing": 77.144,
+        "bearing": 79.942,
         "kind": "land"
       }
     },
@@ -786,8 +786,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          25.847,
-          57.792
+          25.882,
+          57.855
         ]
       },
       "properties": {
@@ -795,7 +795,7 @@
         "b": "10YLV-1001A00074",
         "isoA": "EE",
         "isoB": "LV",
-        "bearing": -170.483,
+        "bearing": -141.405,
         "kind": "land"
       }
     },
@@ -805,8 +805,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.71,
-          42.876
+          0.627,
+          42.727
         ]
       },
       "properties": {
@@ -814,7 +814,7 @@
         "b": "10YFR-RTE------C",
         "isoA": "ES",
         "isoB": "FR",
-        "bearing": 34.486,
+        "bearing": -20.601,
         "kind": "land"
       }
     },
@@ -824,8 +824,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -7.498,
-          39.678
+          -6.851,
+          40.312
         ]
       },
       "properties": {
@@ -833,7 +833,7 @@
         "b": "10YPT-REN------W",
         "isoA": "ES",
         "isoB": "PT",
-        "bearing": -95.987,
+        "bearing": -70.598,
         "kind": "land"
       }
     },
@@ -843,8 +843,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          25.015,
-          69.334
+          25.762,
+          69.058
         ]
       },
       "properties": {
@@ -852,7 +852,7 @@
         "b": "10YNO-0--------C",
         "isoA": "FI",
         "isoB": "NO",
-        "bearing": -70.181,
+        "bearing": -75.229,
         "kind": "land"
       }
     },
@@ -862,8 +862,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          22.428,
-          67.438
+          23.525,
+          67.614
         ]
       },
       "properties": {
@@ -871,7 +871,7 @@
         "b": "10YSE-1--------K",
         "isoA": "FI",
         "isoB": "SE",
-        "bearing": -120.496,
+        "bearing": -98.282,
         "kind": "land"
       }
     },
@@ -900,8 +900,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.162,
-          44.848
+          6.972,
+          44.836
         ]
       },
       "properties": {
@@ -909,7 +909,7 @@
         "b": "10YIT-GRTN-----B",
         "isoA": "FR",
         "isoB": "IT",
-        "bearing": 119.85,
+        "bearing": 65.966,
         "kind": "land"
       }
     },
@@ -919,8 +919,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -7.169,
-          54.565
+          -7.761,
+          54.202
         ]
       },
       "properties": {
@@ -928,7 +928,7 @@
         "b": "10Y1001A1001A59C",
         "isoA": "GB",
         "isoB": "IE",
-        "bearing": -115.959,
+        "bearing": -148.596,
         "kind": "land"
       }
     },
@@ -995,8 +995,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          21.928,
-          41.091
+          21.945,
+          41.112
         ]
       },
       "properties": {
@@ -1004,7 +1004,7 @@
         "b": "10YMK-MEPSO----8",
         "isoA": "GR",
         "isoB": "MK",
-        "bearing": -31.062,
+        "bearing": -30.091,
         "kind": "land"
       }
     },
@@ -1014,8 +1014,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          26.357,
-          41.231
+          26.409,
+          41.277
         ]
       },
       "properties": {
@@ -1023,7 +1023,7 @@
         "b": "10YTR-TEIAS----W",
         "isoA": "GR",
         "isoB": "TR",
-        "bearing": 82.073,
+        "bearing": -238.158,
         "kind": "land"
       }
     },
@@ -1033,8 +1033,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          17.646,
-          46.146
+          17.568,
+          45.923
         ]
       },
       "properties": {
@@ -1042,7 +1042,7 @@
         "b": "10YHU-MAVIR----U",
         "isoA": "HR",
         "isoB": "HU",
-        "bearing": 34.294,
+        "bearing": 31.932,
         "kind": "land"
       }
     },
@@ -1052,8 +1052,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          19.122,
-          45.366
+          19.232,
+          45.294
         ]
       },
       "properties": {
@@ -1061,7 +1061,7 @@
         "b": "10YCS-SERBIATSOV",
         "isoA": "HR",
         "isoB": "RS",
-        "bearing": 98.874,
+        "bearing": 51.802,
         "kind": "land"
       }
     },
@@ -1071,8 +1071,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          15.069,
-          45.929
+          15.32,
+          45.603
         ]
       },
       "properties": {
@@ -1080,7 +1080,7 @@
         "b": "10YSI-ELES-----O",
         "isoA": "HR",
         "isoB": "SI",
-        "bearing": -43.243,
+        "bearing": -68.125,
         "kind": "land"
       }
     },
@@ -1090,8 +1090,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          21.513,
-          47.051
+          21.601,
+          46.902
         ]
       },
       "properties": {
@@ -1099,7 +1099,7 @@
         "b": "10YRO-TEL------P",
         "isoA": "HU",
         "isoB": "RO",
-        "bearing": 107.374,
+        "bearing": -247.081,
         "kind": "land"
       }
     },
@@ -1109,8 +1109,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          19.631,
-          46.063
+          19.564,
+          46.16
         ]
       },
       "properties": {
@@ -1118,7 +1118,7 @@
         "b": "10YCS-SERBIATSOV",
         "isoA": "HU",
         "isoB": "RS",
-        "bearing": 160.667,
+        "bearing": -197.432,
         "kind": "land"
       }
     },
@@ -1128,8 +1128,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          19.662,
-          48.157
+          19.635,
+          48.205
         ]
       },
       "properties": {
@@ -1137,7 +1137,7 @@
         "b": "10YSK-SEPS-----K",
         "isoA": "HU",
         "isoB": "SK",
-        "bearing": 4.809,
+        "bearing": -9.362,
         "kind": "land"
       }
     },
@@ -1147,8 +1147,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          22.525,
-          48.077
+          22.854,
+          47.966
         ]
       },
       "properties": {
@@ -1156,7 +1156,7 @@
         "b": "10Y1001C--00003F",
         "isoA": "HU",
         "isoB": "UA",
-        "bearing": 73.343,
+        "bearing": -0.205,
         "kind": "land"
       }
     },
@@ -1185,8 +1185,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          13.616,
-          46.048
+          13.549,
+          45.994
         ]
       },
       "properties": {
@@ -1194,7 +1194,7 @@
         "b": "10YSI-ELES-----O",
         "isoA": "IT",
         "isoB": "SI",
-        "bearing": 22.979,
+        "bearing": 85.073,
         "kind": "land"
       }
     },
@@ -1204,8 +1204,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          23.812,
-          56.041
+          24.012,
+          56.29
         ]
       },
       "properties": {
@@ -1213,7 +1213,7 @@
         "b": "10YLV-1001A00074",
         "isoA": "LT",
         "isoB": "LV",
-        "bearing": 16.385,
+        "bearing": 6.776,
         "kind": "land"
       }
     },
@@ -1223,8 +1223,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          23.143,
-          54.158
+          23.502,
+          53.976
         ]
       },
       "properties": {
@@ -1232,7 +1232,7 @@
         "b": "10YPL-AREA-----S",
         "isoA": "LT",
         "isoB": "PL",
-        "bearing": -138.697,
+        "bearing": -70.132,
         "kind": "land"
       }
     },
@@ -1261,8 +1261,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          27.337,
-          46.845
+          28.015,
+          47.011
         ]
       },
       "properties": {
@@ -1270,7 +1270,7 @@
         "b": "10YRO-TEL------P",
         "isoA": "MD",
         "isoB": "RO",
-        "bearing": -117.54,
+        "bearing": -122.352,
         "kind": "land"
       }
     },
@@ -1280,8 +1280,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          28.468,
-          46.968
+          29.551,
+          47.028
         ]
       },
       "properties": {
@@ -1289,7 +1289,7 @@
         "b": "10Y1001C--00003F",
         "isoA": "MD",
         "isoB": "UA",
-        "bearing": 42.149,
+        "bearing": 67.404,
         "kind": "land"
       }
     },
@@ -1299,8 +1299,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          19.648,
-          43.426
+          19.436,
+          43.317
         ]
       },
       "properties": {
@@ -1308,7 +1308,7 @@
         "b": "10YCS-SERBIATSOV",
         "isoA": "ME",
         "isoB": "RS",
-        "bearing": 38.298,
+        "bearing": 43.721,
         "kind": "land"
       }
     },
@@ -1318,8 +1318,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          20.151,
-          42.74
+          20.189,
+          42.783
         ]
       },
       "properties": {
@@ -1327,7 +1327,7 @@
         "b": "10Y1001C--00100H",
         "isoA": "ME",
         "isoB": "XK",
-        "bearing": 99.053,
+        "bearing": -227.393,
         "kind": "land"
       }
     },
@@ -1337,8 +1337,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          22.154,
-          42.424
+          22.358,
+          42.3
         ]
       },
       "properties": {
@@ -1346,7 +1346,7 @@
         "b": "10YCS-SERBIATSOV",
         "isoA": "MK",
         "isoB": "RS",
-        "bearing": -12.911,
+        "bearing": -57.091,
         "kind": "land"
       }
     },
@@ -1356,8 +1356,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          21.302,
-          41.99
+          21.409,
+          42.218
         ]
       },
       "properties": {
@@ -1365,7 +1365,7 @@
         "b": "10Y1001C--00100H",
         "isoA": "MK",
         "isoB": "XK",
-        "bearing": -32.399,
+        "bearing": -19.64,
         "kind": "land"
       }
     },
@@ -1375,8 +1375,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          15.919,
-          63.965
+          14.136,
+          64.303
         ]
       },
       "properties": {
@@ -1384,7 +1384,7 @@
         "b": "10YSE-1--------K",
         "isoA": "NO",
         "isoB": "SE",
-        "bearing": 140.395,
+        "bearing": 83.328,
         "kind": "land"
       }
     },
@@ -1413,8 +1413,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          20.659,
-          49.331
+          20.42,
+          49.383
         ]
       },
       "properties": {
@@ -1422,7 +1422,7 @@
         "b": "10YSK-SEPS-----K",
         "isoA": "PL",
         "isoB": "SK",
-        "bearing": 178.156,
+        "bearing": -189.812,
         "kind": "land"
       }
     },
@@ -1432,8 +1432,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          23.298,
-          50.269
+          23.488,
+          50.222
         ]
       },
       "properties": {
@@ -1441,7 +1441,7 @@
         "b": "10Y1001C--00003F",
         "isoA": "PL",
         "isoB": "UA",
-        "bearing": 108.66,
+        "bearing": -223.958,
         "kind": "land"
       }
     },
@@ -1451,8 +1451,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          21.502,
-          45.17
+          21.469,
+          44.891
         ]
       },
       "properties": {
@@ -1460,7 +1460,7 @@
         "b": "10YCS-SERBIATSOV",
         "isoA": "RO",
         "isoB": "RS",
-        "bearing": -117.536,
+        "bearing": -111.345,
         "kind": "land"
       }
     },
@@ -1470,8 +1470,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          24.728,
-          47.987
+          24.788,
+          47.792
         ]
       },
       "properties": {
@@ -1479,7 +1479,7 @@
         "b": "10Y1001C--00003F",
         "isoA": "RO",
         "isoB": "UA",
-        "bearing": 50.021,
+        "bearing": 24.21,
         "kind": "land"
       }
     },
@@ -1489,8 +1489,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          21.216,
-          42.773
+          21.207,
+          42.972
         ]
       },
       "properties": {
@@ -1498,7 +1498,7 @@
         "b": "10Y1001C--00100H",
         "isoA": "RS",
         "isoB": "XK",
-        "bearing": -179.826,
+        "bearing": -134.735,
         "kind": "land"
       }
     },
@@ -1508,8 +1508,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          22.293,
-          48.844
+          22.175,
+          48.586
         ]
       },
       "properties": {
@@ -1517,7 +1517,7 @@
         "b": "10Y1001C--00003F",
         "isoA": "SK",
         "isoB": "UA",
-        "bearing": 84.023,
+        "bearing": -247.941,
         "kind": "land"
       }
     }
