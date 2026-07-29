@@ -13,6 +13,7 @@ import type {
 	ProductionType,
 	UnitOutput,
 } from "../../domain/types";
+import { fetchGbOverlay, GB_AREA } from "../gb";
 import type { GridSource } from "../source";
 import { formatPeriod, NoDataError, query, valueAt } from "./client";
 import { PSR_TO_PRODUCTION } from "./psr";
@@ -241,11 +242,22 @@ export class EntsoeSource implements GridSource {
 			}),
 		);
 
-		const [areaFrames, flowFrames, unitFrames] = await Promise.all([
+		// ENTSO-E answers "no matching data" for GB generation, load and price, so
+		// GB comes from the domestic publishers instead. A failure here leaves GB
+		// exactly as ENTSO-E gave it rather than failing the refresh.
+		const gb = fetchGbOverlay(times).catch((err) => {
+			console.warn(`[gb] overlay failed: ${err}`);
+			return null;
+		});
+
+		const [areaFrames, flowFrames, unitFrames, gbOverlay] = await Promise.all([
 			Promise.all(areaTasks),
 			Promise.all(flowTasks),
 			Promise.all(unitTasks),
+			gb,
 		]);
+
+		if (gbOverlay?.areas.some((a) => a !== null)) degraded.delete(GB_AREA);
 
 		const fetchedAt = now.toISOString();
 		return {
@@ -254,16 +266,37 @@ export class EntsoeSource implements GridSource {
 				timestamp: at.toISOString(),
 				fetchedAt,
 				source: "entsoe",
-				areas: areaFrames.map((a) => a[i]),
-				flows: flowFrames
-					.map((f) => f[i])
-					.filter((f): f is BorderFlow => f !== null),
+				areas: areaFrames.map((a) =>
+					a[i].area === GB_AREA ? (gbOverlay?.areas[i] ?? a[i]) : a[i],
+				),
+				flows: mergeGbFlows(
+					flowFrames
+						.map((f) => f[i])
+						.filter((f): f is BorderFlow => f !== null),
+					gbOverlay?.flows[i] ?? [],
+				),
 				degraded: [...degraded],
 				units: unitFrames.flatMap((u) => u[i]),
 				unitAreas,
 			})),
 		};
 	}
+}
+
+/**
+ * Replace ENTSO-E's GB borders with the Elexon readings, which cover every
+ * cable including the ones ENTSO-E reports as flat zero, and are 5-minutely
+ * rather than hourly.
+ */
+function mergeGbFlows(entsoe: BorderFlow[], gb: BorderFlow[]): BorderFlow[] {
+	if (gb.length === 0) return entsoe;
+	const covered = new Set(gb.map((f) => (f.from === GB_AREA ? f.to : f.from)));
+	const kept = entsoe.filter((f) => {
+		if (f.from !== GB_AREA && f.to !== GB_AREA) return true;
+		const other = f.from === GB_AREA ? f.to : f.from;
+		return !covered.has(other);
+	});
+	return [...kept, ...gb];
 }
 
 /** Order a border so `netMw` is always >= 0, i.e. power moves from -> to. */

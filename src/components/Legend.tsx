@@ -153,6 +153,16 @@ export default function Legend({
 				)}
 			</div>
 
+			{source === "entsoe" && (
+				/* Elexon's BMRS licence requires this statement wherever its data
+				   is shown; the other GB publishers ask only for credit. */
+				<div className="mt-3 border-t border-white/10 pt-2 text-[10px] leading-snug text-white/30">
+					GB figures from Elexon Insights, Sheffield Solar PV_Live and NESO,
+					since ENTSO-E no longer publishes them. Contains BMRS data © Elexon
+					Limited copyright and database right.
+				</div>
+			)}
+
 			{source === "mock" && (
 				<div className="mt-3 rounded border border-amber-400/25 bg-amber-400/10 px-2 py-1.5 text-[10px] leading-snug text-amber-200/90">
 					Simulated data. Set{" "}

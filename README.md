@@ -48,6 +48,31 @@ about 300 requests per refresh against a 400/minute limit, so they run through a
 concurrency limit of 10. Partial failures land in `GridSnapshot.degraded` rather
 than failing the whole snapshot.
 
+**Great Britain.** ENTSO-E answers "no matching data" for GB generation, load
+and price, and reports several interconnectors as flat zero, so on the ENTSO-E
+feed alone GB is a blank country. `src/lib/sources/gb.ts` overlays the domestic
+publishers instead — the same ones every GB grid dashboard reads:
+
+| signal | source |
+| --- | --- |
+| generation by fuel, interconnector flows | Elexon Insights `FUELINST`, 5-minutely |
+| demand | Elexon Insights `INDO` |
+| solar | Sheffield Solar PV_Live (GSP 0) |
+| embedded wind | NESO Demand Data Update |
+| wholesale price | Elexon Insights market index (APX), converted at Yahoo Finance's GBP/EUR rate |
+
+Solar and embedded wind matter because GB solar is almost entirely connected to
+the distribution networks and so is invisible to Elexon: without PV_Live the
+country reads as having no solar at all, and its carbon intensity comes out far
+too high. National Demand nets off embedded generation, so the embedded figures
+are added back to keep load comparable with total generation. No key is needed
+for any of them. Each upstream fails independently, and the whole overlay
+failing leaves GB exactly as ENTSO-E gave it. GB prices are published in £/MWh,
+so one GBP/EUR rate for the whole 24 hours converts them into the euros the
+panel shows — intraday FX moves a fraction of a percent while the prices
+themselves swing by multiples. An implausible rate is discarded rather than
+quoting pounds as euros.
+
 **History.** The slider's 24 hourly frames are free: each ENTSO-E query already
 returns the whole requested period, and the old code kept only the newest point.
 `valueAt(series, instant)` replays one response at any instant, so a day of
@@ -108,6 +133,11 @@ stale; the UI always shows the snapshot's own timestamp.
 - Countries with several bidding zones (Norway, Sweden, Denmark, Italy) are shown
   aggregated, so intra-country congestion is not visible.
 - Carbon intensities are IPCC AR5 lifecycle medians applied to the live mix.
+- NESO's embedded wind file carries settled actuals for elapsed periods and
+  NESO's own forecast for the rest of the day; the actuals lag several hours, so
+  the newest frames necessarily read the forecast.
+- Elexon data is used under the BMRS copyright licence: contains BMRS data ©
+  Elexon Limited copyright and database right.
 - Pinned to `maplibre-gl` 5.24.0: in 6.0.0 `GeoJSONSource.setData` silently fails
   to populate the source and nothing renders.
 
