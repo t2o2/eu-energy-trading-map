@@ -137,14 +137,16 @@ function resolutionMinutes(resolution: string): number {
 }
 
 /**
- * The value of a series at the latest point that is not in the future.
- * ENTSO-E omits repeated points, so position N holds until position N+1.
+ * The value of a series as of `at`, i.e. at the latest point not in its future.
+ * ENTSO-E omits repeated points, so position N holds until position N+1. Pass
+ * a past instant to read history: one query covers the whole lookback window,
+ * so replaying it at several instants costs no extra requests.
  */
-export function latestValue(ts: TimeSeries, now: Date): number | null {
+export function valueAt(ts: TimeSeries, at: Date): number | null {
 	const start = Date.parse(ts.start);
 	if (!Number.isFinite(start)) return null;
 	const step = resolutionMinutes(ts.resolution) * 60_000;
-	const elapsed = now.getTime() - start;
+	const elapsed = at.getTime() - start;
 	if (elapsed < 0) return null;
 	const maxPosition = Math.floor(elapsed / step) + 1;
 

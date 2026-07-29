@@ -8,6 +8,10 @@ carries an animated arrow whose direction, length and thickness show where power
 is moving and how much. A toggleable layer plots every power station of 100 MW
 and above, with live output where its TSO publishes it.
 
+A time slider scrubs back through the last 24 hours — press play to watch solar
+ramp up across the continent, the evening peak bite, and flows reverse as prices
+move. Arrow keys step an hour at a time, space toggles playback.
+
 ![map](docs/screenshot.png)
 
 Pies show output against nameplate capacity; flat dots are stations whose TSO
@@ -19,7 +23,7 @@ publishes no per-unit figures.
 
 ```bash
 npm install
-npm run snapshot  # fetch grid data into public/data/snapshot.json
+npm run snapshot  # fetch 24h of grid data into public/data/snapshot.json
 npm run dev
 ```
 
@@ -41,10 +45,15 @@ cp .env.example .env.local   # then paste your token into ENTSOE_TOKEN
 country codes so moving to bidding-zone level later is a data change, not a
 rewrite. `EntsoeSource` issues four queries per country and two per border —
 about 300 requests per refresh against a 400/minute limit, so they run through a
-concurrency limit of 10. Results are cached for 15 minutes, concurrent misses
-collapse into one upstream fetch, and stale data is served for up to two hours
-if the upstream goes down. Partial failures land in `GridSnapshot.degraded`
-rather than failing the whole snapshot.
+concurrency limit of 10. Partial failures land in `GridSnapshot.degraded` rather
+than failing the whole snapshot.
+
+**History.** The slider's 24 hourly frames are free: each ENTSO-E query already
+returns the whole requested period, and the old code kept only the newest point.
+`valueAt(series, instant)` replays one response at any instant, so a day of
+history costs exactly as many requests as a single reading did — only the stored
+payload grows (~290 KB gzipped, mostly per-unit plant output). The mock is a
+pure function of time, so it generates history the same way.
 
 **Geometry.** `npm run geo` precomputes `public/geo/countries.json` (Natural
 Earth 1:50m polygons, clipped to the European view) and `borders.json` (one
@@ -108,7 +117,7 @@ stale; the UI always shows the snapshot's own timestamp.
 | --- | --- |
 | `npm run dev` | development server |
 | `npm run build` | production build |
-| `npm run snapshot` | fetch grid data into `public/data/snapshot.json` |
+| `npm run snapshot` | fetch 24h of grid data into `public/data/snapshot.json` |
 | `npm run geo` | rebuild map geometry from Natural Earth (~90s, output committed) |
 | `npm run plants` | rebuild power station locations from WRI GPPD (output committed) |
 | `npm run typecheck` | TypeScript, no emit |

@@ -1,9 +1,11 @@
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { AREAS, BORDERS } from "../domain/areas";
+import { frameTimes, HISTORY_STEP_MINUTES } from "../domain/types";
 import type {
 	AreaSnapshot,
 	BorderFlow,
+	GridHistory,
 	GridSnapshot,
 	ProductionType,
 	UnitOutput,
@@ -276,7 +278,21 @@ export class MockSource implements GridSource {
 	readonly name = "mock" as const;
 
 	async fetchSnapshot(): Promise<GridSnapshot> {
-		const now = new Date();
+		return this.frameAt(new Date());
+	}
+
+	/**
+	 * The simulation is a pure function of the instant, so history is simply the
+	 * same generator evaluated at each frame time.
+	 */
+	async fetchHistory(): Promise<GridHistory> {
+		const frames = await Promise.all(
+			frameTimes(new Date()).map((at) => this.frameAt(at)),
+		);
+		return { stepMinutes: HISTORY_STEP_MINUTES, frames };
+	}
+
+	private async frameAt(now: Date): Promise<GridSnapshot> {
 		// Reseed every 15 minutes so the map visibly moves but stays stable within
 		// a refresh cycle, matching ENTSO-E's publication cadence.
 		const seed = Math.floor(now.getTime() / (15 * 60_000));

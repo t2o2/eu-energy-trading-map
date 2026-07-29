@@ -3,13 +3,14 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import dynamic from "next/dynamic";
 import type { FeatureCollection, Point } from "geojson";
-import type { GridSnapshot } from "@/lib/domain/types";
+import type { GridHistory } from "@/lib/domain/types";
 import { formatMw } from "@/lib/theme";
 import type { PlantProps, PlantsMetadata } from "@/lib/plants";
 import { asset } from "@/lib/basePath";
 import type { BorderAnchorProps } from "./FlowMap";
 import CountryPanel from "./CountryPanel";
 import Legend from "./Legend";
+import TimeSlider from "./TimeSlider";
 
 // MapLibre touches window/document at import time.
 const FlowMap = dynamic(() => import("./FlowMap"), { ssr: false });
@@ -17,7 +18,11 @@ const FlowMap = dynamic(() => import("./FlowMap"), { ssr: false });
 const REFRESH_MS = 5 * 60_000;
 
 export default function MapView() {
-	const [snapshot, setSnapshot] = useState<GridSnapshot | null>(null);
+	const [history, setHistory] = useState<GridHistory | null>(null);
+	// Index into history.frames; null means "stay on the newest frame", so a
+	// background refresh advances the map instead of pinning it to a stale hour.
+	const [frame, setFrame] = useState<number | null>(null);
+	const [playing, setPlaying] = useState(false);
 	const [countries, setCountries] = useState<FeatureCollection | null>(null);
 	const [borders, setBorders] = useState<FeatureCollection<
 		Point,
@@ -59,9 +64,9 @@ export default function MapView() {
 					`${asset("/data/snapshot.json")}?t=${Date.now()}`,
 				);
 				if (!res.ok) throw new Error(`snapshot ${res.status}`);
-				const data: GridSnapshot = await res.json();
+				const data: GridHistory = await res.json();
 				if (!cancelled) {
-					setSnapshot(data);
+					setHistory(data);
 					setError(null);
 				}
 			} catch {
@@ -78,6 +83,23 @@ export default function MapView() {
 	}, []);
 
 	const onSelect = useCallback((code: string | null) => setSelected(code), []);
+
+	const frames = history?.frames;
+	const latest = frames ? frames.length - 1 : 0;
+	const index = frame ?? latest;
+	const snapshot = frames?.[Math.min(index, latest)] ?? null;
+
+	const onScrub = useCallback(
+		(next: (prev: number) => number) => {
+			setFrame((prev) => next(prev ?? latest));
+		},
+		[latest],
+	);
+
+	const frameTimes = useMemo(
+		() => frames?.map((f) => f.timestamp) ?? [],
+		[frames],
+	);
 
 	const totals = useMemo(() => {
 		if (!snapshot) return null;
@@ -124,6 +146,7 @@ export default function MapView() {
 				{snapshot && (
 					<p className="mt-2 text-[10px] text-white/35">
 						{new Date(snapshot.timestamp).toUTCString().replace("GMT", "UTC")}
+						{index < latest && " · historic"}
 						{snapshot.degraded.length > 0 &&
 							` · ${snapshot.degraded.length} areas unavailable`}
 					</p>
@@ -151,6 +174,16 @@ export default function MapView() {
 					snapshot={snapshot}
 					code={selected}
 					onClose={() => setSelected(null)}
+				/>
+			)}
+
+			{frames && (
+				<TimeSlider
+					times={frameTimes}
+					index={index}
+					onChange={onScrub}
+					playing={playing}
+					onTogglePlay={() => setPlaying((v) => !v)}
 				/>
 			)}
 		</div>

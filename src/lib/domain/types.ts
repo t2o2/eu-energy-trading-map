@@ -127,6 +127,38 @@ export interface GridSnapshot {
 	unitAreas?: AreaCode[];
 }
 
+/**
+ * A run of snapshots at a fixed cadence, oldest first, so the UI can scrub
+ * through time. The last frame is the most recent and is what the map shows
+ * until the user moves the slider.
+ */
+export interface GridHistory {
+	/** Minutes between consecutive frames. */
+	stepMinutes: number;
+	frames: GridSnapshot[];
+}
+
+/** How far back the time slider reaches. */
+export const HISTORY_HOURS = 24;
+
+/** Minutes between slider frames. Matches ENTSO-E's hourly publication. */
+export const HISTORY_STEP_MINUTES = 60;
+
+/**
+ * The instants the slider steps through, oldest first, aligned to the step so
+ * frames land on ENTSO-E's own publication boundaries. Both sources use this,
+ * so a mock history and a live one are interchangeable.
+ */
+export function frameTimes(now: Date): Date[] {
+	const step = HISTORY_STEP_MINUTES * 60_000;
+	const latest = Math.floor(now.getTime() / step) * step;
+	const count = Math.floor((HISTORY_HOURS * 60) / HISTORY_STEP_MINUTES);
+	return Array.from(
+		{ length: count },
+		(_, i) => new Date(latest - (count - 1 - i) * step),
+	);
+}
+
 export function totalGeneration(s: AreaSnapshot): number {
 	return Object.values(s.generation).reduce<number>((a, b) => a + (b ?? 0), 0);
 }

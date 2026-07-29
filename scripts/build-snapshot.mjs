@@ -1,5 +1,6 @@
 /**
- * Writes public/data/snapshot.json, the single data file the static site reads.
+ * Writes public/data/snapshot.json, the single data file the static site reads:
+ * 24 hourly frames the time slider scrubs through, newest last.
  *
  * GitHub Pages cannot run the old /api/snapshot route, so the fetch that used to
  * happen per request happens here instead — once per deploy, on the hourly cron.
@@ -21,12 +22,14 @@ const source =
 
 console.log(`[snapshot] source=${source.name}`);
 
-const snapshot = await source.fetchSnapshot();
+const history = await source.fetchHistory();
+const latest = history.frames[history.frames.length - 1];
 
 mkdirSync(dirname(out), { recursive: true });
-writeFileSync(out, JSON.stringify(snapshot));
+writeFileSync(out, JSON.stringify(history));
 
 console.log(
-	`[snapshot] ${snapshot.areas.length} areas, ${snapshot.flows.length} flows, ` +
-		`${snapshot.degraded.length} degraded, at ${snapshot.timestamp}`,
+	`[snapshot] ${history.frames.length} frames @ ${history.stepMinutes}min, ` +
+		`${latest.areas.length} areas, ${latest.flows.length} flows, ` +
+		`${latest.degraded.length} degraded, latest ${latest.timestamp}`,
 );
