@@ -20,8 +20,12 @@
 # production
 /build
 
-# generated at build time by `npm run snapshot`
-/public/data
+# generated at build time by `npm run snapshot`. The snapshot itself is tracked:
+# it is the last-known-good the build falls back on when ENTSO-E is unavailable,
+# and CI commits a fresh one back whenever a fetch is healthy. Negating a path
+# needs the /* form — git will not descend into an ignored directory.
+/public/data/*
+!/public/data/snapshot.json
 
 # misc
 .DS_Store
