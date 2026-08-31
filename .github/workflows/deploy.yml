@@ -9,7 +9,8 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  # write so a healthy snapshot can be committed back as the fallback.
+  contents: write
   pages: write
   id-token: write
 
@@ -35,6 +36,29 @@ jobs:
         env:
           ENTSOE_TOKEN: ${{ secrets.ENTSOE_TOKEN }}
         run: npm run snapshot
+
+      # A healthy fetch becomes the committed last-known-good, so the next
+      # ENTSO-E maintenance window falls back to hours-old data rather than
+      # whatever was last committed by hand. When the fetch is rejected the
+      # script leaves the file untouched, so there is nothing to commit and
+      # this step is a no-op. [skip ci] stops the push retriggering this
+      # workflow — the deploy it would trigger is the one already running.
+      - name: Commit refreshed snapshot
+        if: github.ref == 'refs/heads/main'
+        run: |
+          if git diff --quiet -- public/data/snapshot.json; then
+            echo "snapshot unchanged; nothing to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/snapshot.json
+          git commit -m "Refresh grid snapshot [skip ci]"
+          # checkout leaves a detached HEAD, hence the explicit refspec. A lost
+          # race against another push costs us this one fallback refresh, not
+          # the deploy, so it warns instead of failing.
+          git push origin HEAD:main ||
+            echo "::warning::could not push refreshed snapshot; deploy continues"
 
       - name: Build static site
         env:
