@@ -9,7 +9,7 @@ import type {
 	MapMouseEvent,
 } from "maplibre-gl";
 import type { FeatureCollection, Point } from "geojson";
-import { BASE_STYLE } from "@/lib/mapStyle";
+import { BASE_STYLE, transformRequest } from "@/lib/mapStyle";
 import { carbonColor, formatMw, FUEL_COLORS, FUEL_LABELS } from "@/lib/theme";
 import { destination } from "@/lib/geo";
 import { areaName } from "@/lib/domain/areas";
@@ -87,6 +87,7 @@ export default function FlowMap({
 		const m = new maplibregl.Map({
 			container: container.current,
 			style: BASE_STYLE,
+			transformRequest,
 			center: [10, 53],
 			zoom: 3.6,
 			minZoom: 2.5,

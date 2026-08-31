@@ -38,6 +38,12 @@ access" (approval is manual). Put the token in `.env.local`:
 cp .env.example .env.local   # then paste your token into ENTSOE_TOKEN
 ```
 
+The basemap needs no key to render today. `NEXT_PUBLIC_CARTO_BASEMAP_KEY` is
+sent with every CARTO request so that nothing breaks when CARTO makes the key
+mandatory for vector tiles; in CI it comes from the `CARTO_BASEMAP_KEY`
+repository secret. It is a browser key — it ships in the client bundle and is
+visible in tile requests, so the secret only keeps it out of the repository.
+
 ## How it works
 
 **Data.** `GridSource` (`src/lib/sources/source.ts`) has two implementations,
@@ -106,7 +112,7 @@ deliberately strict; a loose match would attach one station's output to
 another's location. Against live French data it matches 21 of the 23 stations
 above 1000 MW and 84% of mapped capacity.
 
-**Rendering.** MapLibre GL with a CARTO raster basemap (no API key). Countries
+**Rendering.** MapLibre GL with CARTO's Dark Matter vector basemap. Countries
 are a fill layer coloured through `feature-state`; flows are a line layer plus an
 arrowhead symbol layer, with travelling pulses updated each animation frame.
 

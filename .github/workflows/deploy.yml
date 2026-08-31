@@ -40,6 +40,8 @@ jobs:
         env:
           # Project pages are served from /<repo>.
           NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
+          # Browser-visible by design; kept in a secret only to stay out of git.
+          NEXT_PUBLIC_CARTO_BASEMAP_KEY: ${{ secrets.CARTO_BASEMAP_KEY }}
         run: npm run build
 
       - uses: actions/configure-pages@v5
